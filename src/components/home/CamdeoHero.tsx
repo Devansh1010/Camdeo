@@ -31,7 +31,7 @@ export default function Hero() {
       object-center
     "
           >
-            <source src="/hero-background-video.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dtylevdry/video/upload/v1779374975/hero-background-video_i79yb1.mp4" type="video/mp4" />
           </video>
         </div>
 
