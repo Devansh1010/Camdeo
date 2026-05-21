@@ -2,34 +2,23 @@ import { Separator } from "../ui/separator";
 import { PartnerCard } from "./components/PartnershipsCard";
 
 const partners = [
+
     {
-        shortName: "M",
-        title: "Mastercam",
-        description:
-            "Industry-leading CAM software for precision CNC machining, multi-axis programming, and advanced manufacturing workflows.",
-        category: "CAM Programming",
-    },
-    {
-        shortName: "S",
+        logo: "/SolidCAM.svg",
         title: "SolidCAM",
         description:
             "Integrated CAM solutions built for high-performance milling, turning, and intelligent manufacturing optimization.",
         category: "Smart Manufacturing",
     },
-    {
-        shortName: "SW",
-        title: "SolidWorks",
-        description:
-            "Professional 3D CAD software used worldwide for product design, engineering simulation, and manufacturing development.",
-        category: "3D Product Design",
-    },
-    {
-        shortName: "A",
-        title: "AutoCAD",
-        description:
-            "Industry-standard drafting and technical drawing software for precise 2D documentation and engineering workflows.",
-        category: "Technical Drafting",
-    },
+
+    //  {
+    //     logo: "/mastercam-logo.svg",
+    //     title: "Mastercam",
+    //     description:
+    //         "Industry-leading CAM software for precision CNC machining, multi-axis programming, and advanced manufacturing workflows.",
+    //     category: "CAM Programming",
+    // },
+
 ];
 
 const Partnerships = () => {
@@ -83,25 +72,28 @@ const Partnerships = () => {
                 </div>
 
                 {/* Cards */}
-                <div
-                    className="
+                <div className="max-w-2xl mx-auto">
+
+                    <div
+                        className="
         mt-20
-        grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4
-        gap-6
+        grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-1
+        gap-6 
       "
-                >
-                    {partners.map((partner) => (
-                        <PartnerCard
-                            key={partner.title}
-                            shortName={partner.shortName}
-                            title={partner.title}
-                            description={partner.description}
-                            category={partner.category}
-                        />
-                    ))}
+                    >
+                        {partners.map((partner) => (
+                            <PartnerCard
+                                key={partner.title}
+                                logo={partner.logo}
+                                title={partner.title}
+                                description={partner.description}
+                                category={partner.category}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
-            <Separator  className="my-10"/>
+            <Separator className="my-10" />
         </section>
     )
 }

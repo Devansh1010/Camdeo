@@ -1,5 +1,6 @@
-import Image from "next/image";
+
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,24 +17,31 @@ export default function Hero() {
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/hero-background.png" 
-          alt="CNC Manufacturing"
-          fill
-          priority
-          className="
-        object-cover
-        object-center
-      "
-        />
+        {/* Background Video */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="
+      w-full h-full
+      object-cover
+      object-center
+    "
+          >
+            <source src="/hero-background-video.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-        {/* Dark Overlay */}
+        {/* Dark Overlay
         <div
           className="
         absolute inset-0
-        bg-black/50
+        bg-black/0
       "
-        />
+        /> */}
 
         {/* Optional Gradient Overlay */}
         <div
@@ -110,21 +118,24 @@ export default function Hero() {
         >
 
           {/* Primary CTA */}
-          <Button
-            className="
+          <Link href='#contact'>
+            <Button
+              className="
           px-8 py-7 rounded-full
           font-semibold text-base
           bg-white text-black
           hover:bg-white/90
         "
-          >
-            Get Started
-          </Button>
+            >
+              Get Started
+            </Button>
+          </Link>
 
           {/* Secondary CTA */}
-          <Button
-            variant="outline"
-            className="
+          <Link href="#services">
+            <Button
+              variant="outline"
+              className="
           px-8 py-7 rounded-full
           border-white/20
           bg-white/5
@@ -132,9 +143,11 @@ export default function Hero() {
           text-white
           hover:bg-white hover:text-black
         "
-          >
-            Explore Services
-          </Button>
+
+            >
+              Explore Services
+            </Button>
+          </Link>
 
         </div>
       </div>

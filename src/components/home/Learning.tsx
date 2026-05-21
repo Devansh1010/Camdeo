@@ -4,24 +4,12 @@ import { Separator } from '../ui/separator';
 
 const trainingPrograms = [
     {
-        software: "Mastercam",
-        shortName: "M",
-        description:
-            "Advanced CAM programming training focused on precision CNC machining and real-world manufacturing workflows.",
-        modules: [
-            "2D Milling",
-            "Mill 3D",
-            "4 & 5 Axis Programming",
-            "Turn-Mill Operations",
-            "Toolpath Optimization",
-            "Post Processor Setup",
-        ],
-    },
-    {
         software: "SolidCAM",
         shortName: "S",
         description:
             "Integrated CAM training designed for high-performance machining and intelligent manufacturing environments.",
+        image: '/SolidCAM.svg',
+        sectionId: 'solidcam',
         modules: [
             "iMachining",
             "2.5D Milling",
@@ -32,38 +20,28 @@ const trainingPrograms = [
         ],
     },
     {
-        software: "SolidWorks",
-        shortName: "SW",
+        software: "Mastercam",
+        shortName: "M",
         description:
-            "Professional CAD design training covering product modeling, assemblies, and engineering workflows.",
+            "Advanced CAM programming training focused on precision CNC machining and real-world manufacturing workflows.",
+        image: '/training.png',
+        sectionId: 'mastercam',
         modules: [
-            "3D Part Modeling",
-            "Assembly Design",
-            "Sheet Metal",
-            "Surface Modeling",
-            "Technical Drawings",
-            "Design Validation",
+            "2D Milling",
+            "Mill 3D",
+            "4 & 5 Axis Programming",
+            "Turn-Mill Operations",
+            "Toolpath Optimization",
+            "Post Processor Setup",
         ],
     },
-    {
-        software: "AutoCAD",
-        shortName: "A",
-        description:
-            "Industry-standard drafting and technical design training for engineering and manufacturing applications.",
-        modules: [
-            "2D Drafting",
-            "Dimensioning",
-            "Layout & Annotation",
-            "Blocks & Layers",
-            "Mechanical Drafting",
-            "Industrial Documentation",
-        ],
-    },
+
 ];
 
 const Learning = () => {
     return (
         <section
+            id='training'
             className="
     relative w-full
     bg-white dark:bg-black
@@ -118,12 +96,13 @@ const Learning = () => {
                 </div>
 
                 {/* Cards */}
+
                 <div
                     className="
         mt-20
         grid grid-cols-1
         md:grid-cols-2
-        xl:grid-cols-4
+        xl:grid-cols-2
         gap-6
       "
                 >
@@ -134,11 +113,14 @@ const Learning = () => {
                             shortName={program.shortName}
                             description={program.description}
                             modules={program.modules}
+                            image={program.image}
+                            sectionId={program.sectionId}
                         />
                     ))}
                 </div>
             </div>
-            <Separator  className="my-10"/>
+
+            <Separator className="my-10" />
         </section>
     )
 }

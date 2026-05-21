@@ -4,10 +4,11 @@ import {
     Factory,
     BadgeCheck,
 } from "lucide-react";
+import Image from "next/image";
 
 const founderSkills = [
     "CAD/CAM Engineering",
-    "Mastercam Programming",
+    "SolidCam & Mastercam Programming",
     "5-Axis Machining",
     "CNC Manufacturing",
     "Corporate Training",
@@ -19,9 +20,8 @@ const Founder = () => {
             className="
     relative w-full
     bg-white dark:bg-black
-    text-black dark:text-white
-    py-28 px-6 sm:px-10 lg:px-20
-    overflow-hidden
+    text-black dark:text-white px-6 sm:px-10 lg:px-20
+    overflow-hidden py-10
   "
         >
             <div className="max-w-360 mx-auto">
@@ -88,37 +88,61 @@ const Founder = () => {
                         {/* Left Side */}
                         <div
                             className="
-            relative
-            bg-gray-50 dark:bg-black
-            border-b lg:border-b-0 lg:border-r
-            border-black/10 dark:border-white/10
-            p-10 md:p-14
-            flex flex-col justify-between
-          "
+    relative
+    bg-gray-50 dark:bg-black
+    border-b lg:border-b-0 lg:border-r
+    border-black/10 dark:border-white/10
+    p-10 md:p-14
+    flex flex-col justify-between
+  "
                         >
 
-                            {/* Profile */}
+                            {/* Top Content */}
                             <div>
 
-                                {/* Avatar */}
+                                {/* Founder Image */}
                                 <div
                                     className="
-                w-24 h-24 rounded-3xl
-                border border-black/10 dark:border-white/10
-                flex items-center justify-center
-                text-3xl font-bold
-                mb-8
-              "
+        relative
+        w-full
+        h-105
+        rounded-[32px]
+        overflow-hidden
+        border border-black/10 dark:border-white/10
+        mb-6
+        group
+      "
                                 >
-                                    JP
+                                    <Image
+                                        src="/Jaiminbhai-professional.png"
+                                        alt="Founder"
+                                        fill
+                                        priority
+                                        className="
+          object-cover
+          transition-transform duration-700
+          group-hover:scale-105
+        "
+                                    />
+
+                                    {/* Gradient Overlay */}
+                                    <div
+                                        className="
+          absolute inset-0
+          bg-linear-to-t
+          from-black/40
+          via-black/10
+          to-transparent
+        "
+                                    />
                                 </div>
 
                                 {/* Name */}
                                 <h3
                                     className="
-                text-3xl md:text-4xl
-                font-bold tracking-tight
-              "
+        text-3xl md:text-4xl
+        font-bold tracking-tight
+      "
                                 >
                                     Jaimin Prajapati
                                 </h3>
@@ -126,13 +150,13 @@ const Founder = () => {
                                 {/* Designation */}
                                 <div
                                     className="
-                mt-4 inline-flex items-center gap-2
-                rounded-full
-                border border-black/10 dark:border-white/10
-                px-4 py-2
-                text-sm uppercase tracking-wider
-                text-red-600 font-semibold
-              "
+        mt-4 inline-flex items-center gap-2
+        rounded-full
+        border border-black/10 dark:border-white/10
+        px-4 py-2
+        text-sm uppercase tracking-wider
+        text-red-600 font-semibold
+      "
                                 >
                                     <BadgeCheck size={16} />
                                     CEO / Founder
@@ -141,11 +165,11 @@ const Founder = () => {
                                 {/* About */}
                                 <p
                                     className="
-                mt-8
-                text-base md:text-lg
-                leading-relaxed
-                text-black/70 dark:text-white/70
-              "
+        mt-8
+        text-base md:text-lg
+        leading-relaxed
+        text-black/70 dark:text-white/70
+      "
                                 >
                                     Passionate about modern manufacturing and industrial
                                     skill development, he focuses on delivering
@@ -159,18 +183,18 @@ const Founder = () => {
                             {/* Bottom Stats */}
                             <div
                                 className="
-              mt-12
-              grid grid-cols-3
-              gap-4
-            "
+      mt-12
+      grid grid-cols-3
+      gap-4
+    "
                             >
 
                                 <div
                                     className="
-                rounded-2xl
-                border border-black/10 dark:border-white/10
-                p-5
-              "
+        rounded-2xl
+        border border-black/10 dark:border-white/10
+        p-5
+      "
                                 >
                                     <div className="text-2xl font-bold">
                                         CAD
@@ -178,9 +202,9 @@ const Founder = () => {
 
                                     <div
                                         className="
-                  mt-2 text-sm
-                  text-black/60 dark:text-white/60
-                "
+          mt-2 text-sm
+          text-black/60 dark:text-white/60
+        "
                                     >
                                         Design Expertise
                                     </div>
@@ -188,10 +212,10 @@ const Founder = () => {
 
                                 <div
                                     className="
-                rounded-2xl
-                border border-black/10 dark:border-white/10
-                p-5
-              "
+        rounded-2xl
+        border border-black/10 dark:border-white/10
+        p-5
+      "
                                 >
                                     <div className="text-2xl font-bold">
                                         CAM
@@ -199,9 +223,9 @@ const Founder = () => {
 
                                     <div
                                         className="
-                  mt-2 text-sm
-                  text-black/60 dark:text-white/60
-                "
+          mt-2 text-sm
+          text-black/60 dark:text-white/60
+        "
                                     >
                                         CNC Programming
                                     </div>
@@ -209,10 +233,10 @@ const Founder = () => {
 
                                 <div
                                     className="
-                rounded-2xl
-                border border-black/10 dark:border-white/10
-                p-5
-              "
+        rounded-2xl
+        border border-black/10 dark:border-white/10
+        p-5
+      "
                                 >
                                     <div className="text-2xl font-bold">
                                         5X
@@ -220,9 +244,9 @@ const Founder = () => {
 
                                     <div
                                         className="
-                  mt-2 text-sm
-                  text-black/60 dark:text-white/60
-                "
+          mt-2 text-sm
+          text-black/60 dark:text-white/60
+        "
                                     >
                                         Axis Machining
                                     </div>
@@ -234,16 +258,18 @@ const Founder = () => {
                         {/* Right Side */}
                         <div
                             className="
-            p-10 md:p-14
-            flex flex-col justify-center
-          "
+  p-8 md:p-12
+  flex flex-col
+  justify-between
+  h-full
+"
                         >
 
                             {/* Skills Header */}
                             <div
                                 className="
               flex items-center gap-3
-              mb-8
+              mb-6
             "
                             >
                                 <div
@@ -274,11 +300,12 @@ const Founder = () => {
 
                             {/* Skills Grid */}
                             <div
-                                className="
-              grid grid-cols-1 sm:grid-cols-2
-              gap-4
-            "
-                            >
+  className="
+    grid grid-cols-1 sm:grid-cols-2
+    gap-4
+    flex-1
+  "
+>
                                 {founderSkills.map((skill) => (
                                     <div
                                         key={skill}
@@ -315,7 +342,7 @@ const Founder = () => {
                             {/* Quote */}
                             <div
                                 className="
-              mt-10
+              mt-6
               rounded-3xl
               border border-black/10 dark:border-white/10
               bg-gray-50 dark:bg-black

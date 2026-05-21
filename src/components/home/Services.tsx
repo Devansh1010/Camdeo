@@ -8,6 +8,7 @@ const services = [
     title: "Industrial Engineering Solutions",
     description:
       "Advanced CAD/CAM engineering services for manufacturing industries including CNC programming, 3D modeling, machining workflows, and production optimization.",
+    image: '/hero.png',
     points: [
       "3-Axis to 5-Axis CNC Programming",
       "Turn-Mill Programming",
@@ -20,11 +21,10 @@ const services = [
     title: "Authorized Software Solutions",
     description:
       "Official engineering software licensing and deployment solutions for industries, institutions, and manufacturing companies.",
+    image: '/Authorozed_background.jpeg',
     points: [
-      "Mastercam Licensing",
-      "SolidCAM Solutions",
-      "SolidWorks Packages",
-      "AutoCAD Industrial Setup",
+       "SolidCAM Licensing",
+      "Mastercam Authorized Training Center",
     ],
   },
   {
@@ -32,11 +32,12 @@ const services = [
     title: "Professional CAD/CAM Training",
     description:
       "Industry-focused technical training programs designed for students, engineers, and corporate manufacturing teams.",
+    image: '/learn-with-us.png',
     points: [
       "Online & Offline Training",
-      "Corporate Upskilling",
-      "Advanced CNC Machining",
-      "Industry-Ready Practical Learning",
+      "Corporate Training",
+      "CAM Programming Service",
+      "3 Axis to 5 Axis Milling, Turining. Turn-Mill C & Y Axis, Mill-Turn, Sliding Head"
     ],
   },
 ];
@@ -114,11 +115,12 @@ export default function Services() {
               title={service.title}
               description={service.description}
               points={service.points}
+              image={service.image}
             />
           ))}
         </div>
       </div>
-      <Separator  className="my-10"/>
+      <Separator className="my-10" />
     </section>
   );
 }

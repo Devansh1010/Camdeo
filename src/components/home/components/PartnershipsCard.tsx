@@ -1,12 +1,15 @@
+import Image from "next/image";
+
 interface PartnerCardProps {
-  shortName: string;
+  logo: string;
   title: string;
   description: string;
   category: string;
 }
 
+
 export const PartnerCard = ({
-  shortName,
+  logo,
   title,
   description,
   category,
@@ -14,31 +17,54 @@ export const PartnerCard = ({
   return (
     <div
       className="
-        group relative
+        group relative overflow-hidden
         rounded-[32px]
         border border-black/10 dark:border-white/10
-        bg-gray-50 dark:bg-black
+        bg-gray-50 dark:bg-zinc-950
         p-8
-        min-h-80
+        min-h-90
         flex flex-col justify-between
         transition-all duration-500
-        hover:border-black dark:hover:border-white
-        hover:-translate-y-1
+        hover:-translate-y-2
+        hover:shadow-2xl
       "
     >
-      <div>
 
-        {/* Logo / Initial */}
+      {/* Background Glow */}
+      <div
+        className="
+          absolute top-0 right-0
+          w-40 h-40
+          bg-red-600/10
+          blur-3xl
+          rounded-full
+        "
+      />
+
+      <div className="relative">
+
+        {/* Logo */}
         <div
           className="
-            w-16 h-16 rounded-2xl
-            border border-black/10 dark:border-white/10
-            flex items-center justify-center
-            text-2xl font-bold
-            mb-8
+            h-16
+            flex items-center
+            mb-10
           "
         >
-          {shortName}
+          <Image
+            src={logo}
+            alt={title}
+            width={140}
+            height={50}
+            className="
+              h-12 w-auto
+              object-contain
+              opacity-80
+              transition-all duration-500
+              group-hover:grayscale-0
+              group-hover:opacity-100
+            "
+          />
         </div>
 
         {/* Title */}
@@ -54,7 +80,8 @@ export const PartnerCard = ({
         {/* Description */}
         <p
           className="
-            mt-5 leading-relaxed
+            mt-5
+            leading-relaxed
             text-black/70 dark:text-white/70
           "
         >
@@ -65,13 +92,28 @@ export const PartnerCard = ({
       {/* Bottom Label */}
       <div
         className="
+          relative
           pt-8 mt-8
           border-t border-black/10 dark:border-white/10
-          text-sm uppercase tracking-widest
-          text-black/50 dark:text-white/50
+          flex items-center justify-between
         "
       >
-        {category}
+
+        <span
+          className="
+            text-sm uppercase tracking-[0.2em]
+            text-black/50 dark:text-white/50
+          "
+        >
+          {category}
+        </span>
+
+        <div
+          className="
+            w-2 h-2 rounded-full
+            bg-red-600
+          "
+        />
       </div>
     </div>
   );

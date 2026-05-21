@@ -2,7 +2,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  ArrowUpRight,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -16,8 +15,6 @@ const footerLinks = {
   training: [
     "Mastercam",
     "SolidCAM",
-    "SolidWorks",
-    "AutoCAD",
   ],
   services: [
     "CAD Services",
@@ -41,84 +38,6 @@ const Footer = () => {
   "
     >
       <div className="max-w-360 mx-auto">
-
-        {/* Top CTA */}
-        <div
-          className="
-        rounded-[40px]
-        border border-black/10 dark:border-white/10
-        bg-gray-50 dark:bg-black
-        p-10 md:p-14
-      "
-        >
-          <div
-            className="
-          flex flex-col lg:flex-row
-          lg:items-center lg:justify-between
-          gap-10
-        "
-          >
-
-            {/* Left */}
-            <div className="max-w-2xl">
-
-              <p
-                className="
-              text-sm uppercase tracking-[0.2em]
-              text-red-600 font-semibold mb-4
-            "
-              >
-                Start Your Engineering Journey
-              </p>
-
-              <h2
-                className="
-              text-3xl sm:text-4xl md:text-5xl
-              font-bold tracking-[-0.04em]
-              leading-tight
-            "
-              >
-                Ready To Upgrade Your
-                <span className="text-red-600">
-                  {" "}Manufacturing Skills?
-                </span>
-              </h2>
-
-              <p
-                className="
-              mt-6
-              text-base md:text-lg
-              leading-relaxed
-              text-black/70 dark:text-white/70
-            "
-              >
-                Join industry-focused CAD/CAM training programs
-                and advanced manufacturing solutions designed for
-                engineers, students, and industries.
-              </p>
-            </div>
-
-            {/* Right */}
-            <div>
-              <button
-                className="
-              inline-flex items-center gap-3
-              rounded-full
-              bg-black text-white
-              dark:bg-white dark:text-black
-              px-8 py-4
-              font-semibold
-              transition-all duration-300
-              hover:scale-[1.02]
-            "
-              >
-                Enquire Now
-                <ArrowUpRight size={18} />
-              </button>
-            </div>
-
-          </div>
-        </div>
 
         {/* Footer Content */}
         <div
@@ -169,7 +88,7 @@ const Footer = () => {
                 text-black/80 dark:text-white/80
               "
                 >
-                  +91 98765 43210
+                  +91 81287 13400
                 </span>
               </div>
 
@@ -184,7 +103,7 @@ const Footer = () => {
                 text-black/80 dark:text-white/80
               "
                 >
-                  info@camdeo.com
+                  jaimin@camdeo.com
                 </span>
               </div>
 
@@ -199,7 +118,7 @@ const Footer = () => {
                 text-black/80 dark:text-white/80
               "
                 >
-                  Ahmedabad, Gujarat, India
+                  130, 1st floor,sun business hub,near barcelona complex,odhav ring road, Ahmedabad, Gujarat, India
                 </span>
               </div>
 
@@ -252,7 +171,7 @@ const Footer = () => {
               {footerLinks.training.map((link) => (
                 <Link
                   key={link}
-                  href="#learning"
+                  href={`#${link.toLowerCase()}`}
                   className="
                 block
                 text-black/70 dark:text-white/70
@@ -280,9 +199,8 @@ const Footer = () => {
 
             <div className="space-y-4">
               {footerLinks.services.map((link) => (
-                <Link
+                <ul
                   key={link}
-                  href="#services"
                   className="
                 block
                 text-black/70 dark:text-white/70
@@ -291,7 +209,7 @@ const Footer = () => {
               "
                 >
                   {link}
-                </Link>
+                </ul>
               ))}
             </div>
           </div>
