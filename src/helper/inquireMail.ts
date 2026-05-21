@@ -4,7 +4,7 @@ import verificationEmail from '@/../emails/newInquire'
 export async function inquryEmail(email: string, username: string, phone: string, message: string, services: string) {
   try {
     const { data, error } = await resend.emails.send({
-      from: '"Camdeo <onboarding@resend.dev>',
+      from: '"Camdeo <noreply@camdeo.in>',
       to: process.env.EMAIL!,
       subject: 'New Inquiry || Camdeo',
       react: verificationEmail({ username, phone, email, message, services }),
