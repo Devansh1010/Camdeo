@@ -24,7 +24,11 @@ const services = [
     image: '/Authorozed_background.jpeg',
     points: [
        "SolidCAM Licensing",
-      "Mastercam Authorized Training Center",
+       
+       "Technical Support",
+       "Update and Maintanence",
+       "Complete Solution"
+      
     ],
   },
   {
@@ -37,7 +41,8 @@ const services = [
       "Online & Offline Training",
       "Corporate Training",
       "CAM Programming Service",
-      "3 Axis to 5 Axis Milling, Turining. Turn-Mill C & Y Axis, Mill-Turn, Sliding Head"
+      "3 Axis to 5 Axis Milling, Turining. Turn-Mill C & Y Axis, Mill-Turn, Sliding Head",
+      "Mastercam Authorized Training Center",
     ],
   },
 ];

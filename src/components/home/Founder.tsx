@@ -183,72 +183,82 @@ const Founder = () => {
                             {/* Bottom Stats */}
                             <div
                                 className="
-      mt-12
-      grid grid-cols-3
-      gap-4
-    "
+    mt-12
+    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+    gap-4
+  "
                             >
 
-                                <div
-                                    className="
-        rounded-2xl
-        border border-black/10 dark:border-white/10
-        p-5
-      "
-                                >
+                                {/* CAD */}
+                                <div className="
+    rounded-2xl
+    border border-black/10 dark:border-white/10
+    p-5
+  ">
                                     <div className="text-2xl font-bold">
                                         CAD
                                     </div>
 
-                                    <div
-                                        className="
-          mt-2 text-sm
-          text-black/60 dark:text-white/60
-        "
-                                    >
+                                    <div className="
+      mt-2 text-sm
+      text-black/60 dark:text-white/60
+    ">
                                         Design Expertise
                                     </div>
                                 </div>
 
-                                <div
-                                    className="
-        rounded-2xl
-        border border-black/10 dark:border-white/10
-        p-5
-      "
-                                >
+                                {/* CAM */}
+                                <div className="
+    rounded-2xl
+    border border-black/10 dark:border-white/10
+    p-5
+  ">
                                     <div className="text-2xl font-bold">
                                         CAM
                                     </div>
 
-                                    <div
-                                        className="
-          mt-2 text-sm
-          text-black/60 dark:text-white/60
-        "
-                                    >
+                                    <div className="
+      mt-2 text-sm
+      text-black/60 dark:text-white/60
+    ">
                                         CNC Programming
                                     </div>
                                 </div>
 
-                                <div
-                                    className="
-        rounded-2xl
-        border border-black/10 dark:border-white/10
-        p-5
-      "
-                                >
+                                {/* 5X */}
+                                <div className="
+    rounded-2xl
+    border border-black/10 dark:border-white/10
+    p-5
+  ">
                                     <div className="text-2xl font-bold">
                                         5X
                                     </div>
 
-                                    <div
-                                        className="
-          mt-2 text-sm
-          text-black/60 dark:text-white/60
-        "
-                                    >
+                                    <div className="
+      mt-2 text-sm
+      text-black/60 dark:text-white/60
+    ">
                                         Axis Machining
+                                    </div>
+                                </div>
+
+                                {/* Experience */}
+                                <div className="
+    rounded-2xl
+    border border-black/10 dark:border-white/10
+    p-5
+    bg-black/[0.02] dark:bg-white/[0.02]
+  ">
+                                    <div className="text-2xl font-bold">
+                                        15+
+                                    </div>
+
+                                    <div className="
+      mt-2 text-sm
+      text-black/60 dark:text-white/60
+    ">
+                                        Years of Experience
                                     </div>
                                 </div>
 
@@ -300,12 +310,12 @@ const Founder = () => {
 
                             {/* Skills Grid */}
                             <div
-  className="
+                                className="
     grid grid-cols-1 sm:grid-cols-2
     gap-4
     flex-1
   "
->
+                            >
                                 {founderSkills.map((skill) => (
                                     <div
                                         key={skill}

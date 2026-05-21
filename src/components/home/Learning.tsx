@@ -15,8 +15,8 @@ const trainingPrograms = [
             "2.5D Milling",
             "Multi-Axis Machining",
             "Turning Operations",
+            'Swiss type Machining Solution',
             "CAM Simulation",
-            "Production Workflow",
         ],
     },
     {

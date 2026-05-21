@@ -31,28 +31,9 @@ export default function Hero() {
       object-center
     "
           >
-            <source src="https://res.cloudinary.com/dtylevdry/video/upload/v1779374975/hero-background-video_i79yb1.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dtylevdry/video/upload/v1779382939/New_Camdeo_Video-2_bxvvev.mp4" type="video/mp4" />
           </video>
         </div>
-
-        {/* Dark Overlay
-        <div
-          className="
-        absolute inset-0
-        bg-black/0
-      "
-        /> */}
-
-        {/* Optional Gradient Overlay */}
-        <div
-          className="
-        absolute inset-0
-        bg-linear-to-b
-        from-black/60
-        via-black/50
-        to-black/80
-      "
-        />
       </div>
 
       {/* Content Wrapper */}

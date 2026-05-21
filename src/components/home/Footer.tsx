@@ -243,24 +243,12 @@ const Footer = () => {
           text-black/50 dark:text-white/50
         "
           >
-            <Link
-              href="#"
-              className="hover:text-red-600 transition-colors"
-            >
-              Privacy Policy
-            </Link>
-
-            <Link
-              href="#"
-              className="hover:text-red-600 transition-colors"
-            >
-              Terms & Conditions
-            </Link>
+            <p>Powered by Camdeo Technologies</p>
           </div>
         </div>
       </div>
     </footer>
   )
 }
-
+ 
 export default Footer
