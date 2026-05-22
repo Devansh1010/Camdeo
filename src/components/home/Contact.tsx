@@ -100,7 +100,7 @@ const Contact = () => {
 
             form.reset();
 
-         
+
             setOpen(false);
 
         } catch (error: unknown) {
@@ -292,23 +292,33 @@ const Contact = () => {
                         {/* Content */}
                         <AlertDialogContent
                             className="
+      w-[95vw]
+      sm:w-full
       max-w-4xl
-      min-w-3xl
       max-h-[90vh]
       overflow-hidden
-      rounded-[32px]
-      border border-black/10 dark:border-white/10
+      rounded-3xl
+      border border-black/10
+      dark:border-white/10
       bg-white dark:bg-zinc-950
       p-0
     "
                         >
 
-                            <div className="overflow-y-auto max-h-[90vh]">
+                            <div
+                                className="
+        overflow-y-auto
+        max-h-[90vh]
+        overscroll-contain
+      "
+                            >
 
                                 {/* Header */}
                                 <div
                                     className="
-          px-8 pt-8 pb-6
+          px-5 sm:px-8
+          pt-6 sm:pt-8
+          pb-5 sm:pb-6
           border-b border-black/5
           dark:border-white/5
         "
@@ -316,7 +326,7 @@ const Contact = () => {
 
                                     <AlertDialogTitle
                                         className="
-            text-2xl
+            text-xl sm:text-2xl
             font-semibold
             tracking-tight
             text-center
@@ -328,7 +338,7 @@ const Contact = () => {
                                     <p
                                         className="
             mt-3
-            text-sm md:text-base
+            text-sm sm:text-base
             text-center
             text-black/60 dark:text-white/60
             leading-relaxed
@@ -343,7 +353,11 @@ const Contact = () => {
                                 {/* Form */}
                                 <form
                                     onSubmit={form.handleSubmit(onSubmit)}
-                                    className="space-y-6 px-10 py-5"
+                                    className="
+          space-y-6
+          px-5 sm:px-10
+          py-5
+        "
                                 >
 
                                     {/* Name + Phone */}
@@ -367,8 +381,9 @@ const Contact = () => {
                                                         autoComplete="off"
                                                         aria-invalid={fieldState.invalid}
                                                         className="
-                  h-12 rounded-2xl
-                "
+                    h-12
+                    rounded-2xl
+                  "
                                                     />
 
                                                     <FieldDescription>
@@ -403,8 +418,9 @@ const Contact = () => {
                                                         autoComplete="off"
                                                         aria-invalid={fieldState.invalid}
                                                         className="
-                  h-12 rounded-2xl
-                "
+                    h-12
+                    rounded-2xl
+                  "
                                                     />
 
                                                     <FieldDescription>
@@ -442,8 +458,9 @@ const Contact = () => {
                                                     autoComplete="off"
                                                     aria-invalid={fieldState.invalid}
                                                     className="
-                h-12 rounded-2xl
-              "
+                  h-12
+                  rounded-2xl
+                "
                                                 />
 
                                                 <FieldDescription>
@@ -479,8 +496,9 @@ const Contact = () => {
                                                     <SelectTrigger
                                                         aria-invalid={fieldState.invalid}
                                                         className="
-                  h-12 rounded-2xl
-                "
+                    h-12
+                    rounded-2xl
+                  "
                                                     >
                                                         <SelectValue placeholder="Select a service" />
                                                     </SelectTrigger>
@@ -543,9 +561,9 @@ const Contact = () => {
                                                     placeholder="Tell us about your requirement..."
                                                     aria-invalid={fieldState.invalid}
                                                     className="
-                rounded-2xl
-                resize-none
-              "
+                  rounded-2xl
+                  resize-none
+                "
                                                 />
 
                                                 <FieldDescription>
@@ -561,10 +579,13 @@ const Contact = () => {
                                             </Field>
                                         )}
                                     />
+
+                                    {/* Footer */}
                                     <AlertDialogFooter
                                         className="
             pt-4
-            flex-row
+            flex-col-reverse
+            sm:flex-row
             justify-end
             gap-3
           "
@@ -577,6 +598,8 @@ const Contact = () => {
               rounded-full
               h-12
               px-6
+              w-full
+              sm:w-auto
             "
                                         >
                                             Cancel
@@ -590,6 +613,8 @@ const Contact = () => {
               rounded-full
               h-12
               px-6
+              w-full
+              sm:w-auto
             "
                                         >
 
@@ -606,6 +631,7 @@ const Contact = () => {
                                     </AlertDialogFooter>
 
                                 </form>
+
                             </div>
 
                         </AlertDialogContent>
