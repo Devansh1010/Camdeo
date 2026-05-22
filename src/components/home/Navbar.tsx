@@ -100,16 +100,6 @@ const Navbar = () => {
               Enquire Now
             </Button>
           </Link>
-
-          {/* Vertical Divider + Theme Toggle */}
-          <div className="flex items-center gap-4">
-
-            {/* Divider */}
-            <div className="h-6 w-px bg-black/20 dark:bg-white/20" />
-
-            {/* Theme Toggle */}
-            <ModeToggle />
-          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -174,14 +164,14 @@ const Navbar = () => {
           </Link>
 
           {/* Divider + Toggle */}
-          <div className="flex items-center gap-4 pt-2">
+          {/* <div className="flex items-center gap-4 pt-2">
 
             <div className="flex-1 h-px bg-black/10 dark:bg-white/10" />
 
             <ModeToggle />
 
             <div className="flex-1 h-px bg-black/10 dark:bg-white/10" />
-          </div>
+          </div> */}
         </div>
       )}
     </nav>

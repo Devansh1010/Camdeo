@@ -13,8 +13,9 @@ const footerLinks = {
     "contact",
   ],
   training: [
-    "Mastercam",
     "SolidCAM",
+    "Mastercam",
+
   ],
   services: [
     "CAD Services",
@@ -43,7 +44,7 @@ const Footer = () => {
         <div
           className="
         mt-24
-        grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5
+        grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6
         gap-12
       "
         >
@@ -214,6 +215,62 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Social Media */}
+          <div>
+
+            <h3
+              className="
+      text-lg font-semibold
+      mb-6
+    "
+            >
+              Social
+            </h3>
+
+            <div className="space-y-4">
+
+              <Link
+                href="https://www.instagram.com/camdeo.technologies?igsh=MXFrczlheHhmaGl5cQ=="
+                target="_blank"
+                className="
+        block
+        text-black/70 dark:text-white/70
+        transition-colors duration-300
+        hover:text-red-600
+      "
+              >
+                Instagram
+              </Link>
+
+              <Link
+                href="https://facebook.com"
+                target="_blank"
+                className="
+        block
+        text-black/70 dark:text-white/70
+        transition-colors duration-300
+        hover:text-red-600
+      "
+              >
+                Facebook
+              </Link>
+
+              <Link
+                href="https://youtube.com/@camdeotechnologies?si=QK95QIE0qHGcoOZD"
+                target="_blank"
+                className="
+        block
+        text-black/70 dark:text-white/70
+        transition-colors duration-300
+        hover:text-red-600
+      "
+              >
+                Youtube
+              </Link>
+
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom */}
@@ -250,5 +307,5 @@ const Footer = () => {
     </footer>
   )
 }
- 
+
 export default Footer
