@@ -223,70 +223,186 @@ const Footer = () => {
               className="
       text-lg font-semibold
       mb-6
+      tracking-tight
     "
             >
               Social
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
 
+              {/* Instagram */}
               <Link
                 href="https://www.instagram.com/camdeo.technologies?igsh=MXFrczlheHhmaGl5cQ=="
                 target="_blank"
                 className="
-        flex items-center gap-3
-        text-black/70 dark:text-white/70
-        transition-colors duration-300
-        hover:text-red-600
+        group
+        flex items-center gap-4
+
+        rounded-2xl
+        border border-black/10 dark:border-white/10
+
+        px-3 py-3
+
+        bg-white/50 dark:bg-white/3
+        backdrop-blur-sm
+
+        transition-all duration-300
+
+        hover:border-red-500/40
+        hover:bg-red-500/4
+        hover:-translate-y-0.5
       "
               >
-                <SocialIcon
-                  url="https://instagram.com"
-                  style={{ height: 36, width: 36 }}
-                  bgColor="transparent"
-                  fgColor="currentColor"
-                />
+                <div
+                  className="
+          flex items-center justify-center
 
-                <span>Instagram</span>
+          h-11 w-11
+          rounded-xl
+
+          bg-black/4
+          dark:bg-white/6
+
+          transition-colors duration-300
+          group-hover:bg-red-500/10
+        "
+                >
+                  <SocialIcon
+                    url="https://www.instagram.com/camdeo.technologies?igsh=MXFrczlheHhmaGl5cQ=="
+                    style={{ height: 22, width: 22 }}
+                    bgColor="transparent"
+                    fgColor="currentColor"
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <span
+                    className="
+            font-medium
+            text-black dark:text-white
+          "
+                  >
+                    Instagram
+                  </span>
+
+                </div>
               </Link>
 
+              {/* Facebook */}
               <Link
                 href="https://www.facebook.com/profile.php?id=61589961766966"
                 target="_blank"
                 className="
-        flex items-center gap-3
-        text-black/70 dark:text-white/70
-        transition-colors duration-300
-        hover:text-red-600
+        group
+        flex items-center gap-4
+
+        rounded-2xl
+        border border-black/10 dark:border-white/10
+
+        px-4 py-3
+
+        bg-white/50 dark:bg-white/3
+        backdrop-blur-sm
+
+        transition-all duration-300
+
+        hover:border-red-500/40
+        hover:bg-red-500/4
+        hover:-translate-y-0.5
       "
               >
-                <SocialIcon
-                  url="https://facebook.com"
-                  style={{ height: 36, width: 36 }}
-                  bgColor="transparent"
-                  fgColor="currentColor"
-                />
+                <div
+                  className="
+          flex items-center justify-center
 
-                <span>Facebook</span>
+          h-11 w-11
+          rounded-xl
+
+          bg-black/4
+          dark:bg-white/6
+
+          transition-colors duration-300
+          group-hover:bg-red-500/10
+        "
+                >
+                  <SocialIcon
+                    url="https://www.facebook.com/profile.php?id=61589961766966"
+                    style={{ height: 22, width: 22 }}
+                    bgColor="transparent"
+                    fgColor="currentColor"
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <span
+                    className="
+            font-medium
+            text-black dark:text-white
+          "
+                  >
+                    Facebook
+                  </span>
+
+                 
+                </div>
               </Link>
 
+              {/* YouTube */}
               <Link
                 href="https://youtube.com/@camdeotechnologies?si=QK95QIE0qHGcoOZD"
                 target="_blank"
                 className="
-        flex items-center gap-3
-        text-black/70 dark:text-white/70
-        transition-colors duration-300
-        hover:text-red-600
+        group
+        flex items-center gap-4
+
+        rounded-2xl
+        border border-black/10 dark:border-white/10
+
+        px-4 py-3
+
+        bg-white/50 dark:bg-white/3
+        backdrop-blur-sm
+
+        transition-all duration-300
+
+        hover:border-red-500/40
+        hover:bg-red-500/4
+        hover:-translate-y-0.5
       "
               >
-                <SocialIcon
-                  url="https://youtube.com"
-                  style={{ height: 36, width: 36 }}
-                  bgColor="transparent"
-                  fgColor="currentColor"
-                />
-                <span>YouTube</span>
+                <div
+                  className="
+          flex items-center justify-center
+
+          h-11 w-11
+          rounded-xl
+
+          bg-black/4
+          dark:bg-white/6
+
+          transition-colors duration-300
+          group-hover:bg-red-500/10
+        "
+                >
+                  <SocialIcon
+                    url="https://youtube.com/@camdeotechnologies?si=QK95QIE0qHGcoOZD"
+                    style={{ height: 22, width: 22 }}
+                    bgColor="transparent"
+                    fgColor="currentColor"
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <span
+                    className="
+            font-medium
+            text-black dark:text-white
+          "
+                  >
+                    YouTube
+                  </span>
+                </div>
               </Link>
 
             </div>
@@ -294,38 +410,39 @@ const Footer = () => {
 
         </div>
 
-        {/* Bottom */}
-        <div
-          className="
+      </div>
+
+      {/* Bottom */}
+      <div
+        className="
         mt-20 pt-8
         border-t border-black/10 dark:border-white/10
         flex flex-col md:flex-row
         items-center justify-between
         gap-4
       "
-        >
+      >
 
-          <p
-            className="
+        <p
+          className="
           text-sm
           text-black/50 dark:text-white/50
         "
-          >
-            © 2026 Camdeo Technologies. All rights reserved.
-          </p>
+        >
+          © 2026 Camdeo Technologies. All rights reserved.
+        </p>
 
-          <div
-            className="
+        <div
+          className="
           flex items-center gap-6
           text-sm
           text-black/50 dark:text-white/50
         "
-          >
-            <p>Powered by Camdeo Technologies</p>
-          </div>
+        >
+          <p>Powered by Camdeo Technologies</p>
         </div>
       </div>
-    </footer>
+    </footer >
   )
 }
 
