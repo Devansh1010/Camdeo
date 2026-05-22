@@ -4,7 +4,7 @@ import { PartnerCard } from "./components/PartnershipsCard";
 const partners = [
 
     {
-        logo: "/SolidCAM.svg",
+        logo: "/solid-cam-partner-logo.png",
         title: "SolidCAM",
         description:
             "Integrated CAM solutions built for high-performance milling, turning, and intelligent manufacturing optimization.",

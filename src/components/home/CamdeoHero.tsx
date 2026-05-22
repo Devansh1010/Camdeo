@@ -15,8 +15,6 @@ export default function Hero() {
   "
     >
 
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
         {/* Background Video */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <video
@@ -34,7 +32,6 @@ export default function Hero() {
             <source src="https://res.cloudinary.com/dtylevdry/video/upload/v1779382939/New_Camdeo_Video-2_bxvvev.mp4" type="video/mp4" />
           </video>
         </div>
-      </div>
 
       {/* Content Wrapper */}
       <div

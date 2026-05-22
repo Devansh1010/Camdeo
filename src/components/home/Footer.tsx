@@ -4,6 +4,7 @@ import {
   MapPin,
 } from "lucide-react";
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons"
 
 const footerLinks = {
   company: [
@@ -215,9 +216,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Media */}
-          <div>
+          {/* Social */}
 
+          <div>
             <h3
               className="
       text-lg font-semibold
@@ -233,39 +234,59 @@ const Footer = () => {
                 href="https://www.instagram.com/camdeo.technologies?igsh=MXFrczlheHhmaGl5cQ=="
                 target="_blank"
                 className="
-        block
+        flex items-center gap-3
         text-black/70 dark:text-white/70
         transition-colors duration-300
         hover:text-red-600
       "
               >
-                Instagram
+                <SocialIcon
+                  url="https://instagram.com"
+                  style={{ height: 36, width: 36 }}
+                  bgColor="transparent"
+                  fgColor="currentColor"
+                />
+
+                <span>Instagram</span>
               </Link>
 
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61589961766966"
                 target="_blank"
                 className="
-        block
+        flex items-center gap-3
         text-black/70 dark:text-white/70
         transition-colors duration-300
         hover:text-red-600
       "
               >
-                Facebook
+                <SocialIcon
+                  url="https://facebook.com"
+                  style={{ height: 36, width: 36 }}
+                  bgColor="transparent"
+                  fgColor="currentColor"
+                />
+
+                <span>Facebook</span>
               </Link>
 
               <Link
                 href="https://youtube.com/@camdeotechnologies?si=QK95QIE0qHGcoOZD"
                 target="_blank"
                 className="
-        block
+        flex items-center gap-3
         text-black/70 dark:text-white/70
         transition-colors duration-300
         hover:text-red-600
       "
               >
-                Youtube
+                <SocialIcon
+                  url="https://youtube.com"
+                  style={{ height: 36, width: 36 }}
+                  bgColor="transparent"
+                  fgColor="currentColor"
+                />
+                <span>YouTube</span>
               </Link>
 
             </div>

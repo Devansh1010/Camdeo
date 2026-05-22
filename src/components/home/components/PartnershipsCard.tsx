@@ -54,10 +54,10 @@ export const PartnerCard = ({
           <Image
             src={logo}
             alt={title}
-            width={140}
-            height={50}
+            width={200}
+            height={70}
             className="
-              h-12 w-auto
+             w-auto
               object-contain
               opacity-80
               transition-all duration-500
